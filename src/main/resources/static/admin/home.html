@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- 页面meta -->
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>后台管理系统</title>
+    <meta content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" name="viewport"/>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="../plugins/adminLTE/css/AdminLTE.css"/>
+    <link rel="stylesheet" href="../plugins/adminLTE/css/skins/_all-skins.min.css"/>
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../plugins/layui/css/layui.css" />
+    <script src="../plugins/layui/layui.js"></script>
+    <script src="../plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/echarts/echarts.min.js"></script>
+    <script src="../plugins/angularjs/angular.min.js"></script>
+    <script src="../js/base_nopagination.js"></script>
+    <script src="../js/controller/baseController.js"></script>
+    <script src="../js/service/orderService.js"></script>
+    <script src="../js/controller/orderController.js"></script>
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini" ng-app="bookshopAdmin" ng-controller="orderController"
+      ng-init="getData()">
+<section class="content-header">
+    <h2>
+        欢迎访问校园二手书后台管理系统
+    </h2>
+    <div id="main" style="width: 1000px; height: 500px;"></div>
+</section>
+<!-- 内容头部 /-->
+</body>
+</html>
