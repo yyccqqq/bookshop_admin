@@ -1,7 +1,7 @@
 server:
   servlet:
-    context-path: /bookshopAdmin
-  port: 9090
+    context-path: /admin
+  port: 9999
 
 spring:
   datasource: # MySQL 配置
