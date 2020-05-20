@@ -70,7 +70,8 @@ public class OrdersServiceImpl extends ServiceImpl<OrdersMapper, Orders> impleme
         Date beginOfDay = DateUtil.beginOfDay(date);
         Date endOfDay = DateUtil.endOfDay(date);
         LambdaQueryWrapper<Orders> wrapper = new LambdaQueryWrapper<>();
-        wrapper.between(Orders::getDate, beginOfDay, endOfDay).ne(Orders::getType, 4);
+        wrapper.between(Orders::getDate, beginOfDay, endOfDay);
+        /* wrapper.between(Orders::getDate, beginOfDay, endOfDay).ne(Orders::getType, 4); */
         List<Orders> ordersList = ordersMapper.selectList(wrapper);
         Double totalPrice = 0.0;
         for (Orders orders : ordersList) {
