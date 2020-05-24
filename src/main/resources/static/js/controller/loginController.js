@@ -1,7 +1,7 @@
 app.controller("loginController", function ($scope, loginService) {
   $scope.entity = {};
 
-  $scope.username = Cookies.get("username");
+  $scope.admin = Cookies.get("admin");
 
   //登录
   $scope.login = function () {
@@ -20,7 +20,7 @@ app.controller("loginController", function ($scope, loginService) {
     } else {
       loginService.login($scope.entity).success(function (response) {
         if (response.success) {
-          Cookies.set("username", username);
+          Cookies.set("admin", username);
           location.href = "admin/index.html";
         } else {
           layui.use("layer", function () {
