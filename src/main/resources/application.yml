@@ -11,13 +11,13 @@ spring:
     password: 123456 # 数据库连接密码
     type: com.alibaba.druid.pool.DruidDataSource
   rabbitmq:
-    host: 192.168.124.10
+    host: 192.168.124.129
     port: 5672
     username: yan
     password: 123456
   elasticsearch:
     rest:
-      uris: 192.168.124.10:9200
+      uris: 192.168.124.129:9200
       connection-timeout: 100000
       read-timeout: 50000  
 
